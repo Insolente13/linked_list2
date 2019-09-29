@@ -142,22 +142,4 @@ class LinkedList2:
             head_before.prev = newNode
             self.head = newNode
 
-    def print_all_nodes(self):
-        node = self.head
-        node_prev = []
-        node_list = []
-        node_next = []
-        while node is not None:
-            node_list.append(node.value)
-            if node.prev is not None:
-                node_prev.append(node.prev.value)
-            else:
-                node_prev.append(None)
-            if node.next is not None:
-                node_next.append(node.next.value)
-            else:
-                node_next.append(None)
-            node = node.next
-        print('node_prev', node_prev)
-        print('node_list', node_list)
-        print('node_next', node_next)
+   
